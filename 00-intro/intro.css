@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(105, 255, 155);
+}
+
+.myclass {
+    background-color: aqua;
+}
+
+#mytext {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#mytext2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
