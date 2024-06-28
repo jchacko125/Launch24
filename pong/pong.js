@@ -7,7 +7,7 @@ let boardHeight = 500;
 let paddleSpin = 1.5; // >= 0.0
 let paddleForce = 1.1; // >= 1.0
 let paddleWidth = 10;
-let paddleLength = 40;
+let paddleLength = 80;
 let ballRadius = 12.5;
 
 let ball;
@@ -15,6 +15,7 @@ let paddleL;
 let paddleR;
 let scoreL = 0;
 let scoreR = 0;
+let ballVariable = 4;
 
 function resetGame() {
     clearInterval(intervalID);
@@ -48,17 +49,17 @@ function resetBall() {
     direction = direction + 1;
     direction = Math.floor(direction)
     if (direction == 1)
-        ballSpeed = -7
+        ballSpeed = -ballVariable
     else if (direction == 2)
-        ballSpeed = 7
+        ballSpeed = ballVariable
     directionY= Math.random();
     directionY = directionY * range;
     directionY = directionY + 1;
     directionY = Math.floor(directionY)
     if (directionY == 1)
-        ballSpeedY = -7
+        ballSpeedY = -ballVariable
     else if (directionY == 2)
-        ballSpeedY = 7
+        ballSpeedY = ballVariable
     ball = new Ball(boardWidth/2, boardHeight/2, ballSpeed, ballSpeedY, ballRadius, "rgb(40,40,40)" )
 }
 
